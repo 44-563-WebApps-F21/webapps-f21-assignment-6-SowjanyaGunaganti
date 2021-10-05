@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Basic Html structure using Java Script</title>
+    </head>
+
+ 
+<body>
+    <h1>Pass phrase by Sowjanya Gunaganti</h1>
+
+<h2>Getting input</h2>
+
+<form>
+    <label for ="p">Enter the secret phrase</label>
+    <input type="password" id="p" name="p" value="Let me in" >
+    <label for ="t">Enter a phrase</label>
+    <input type="text" id="t" name="t">
+    <input type="button" onclick="processPhrase()" value="Check the phrase">
+</form>
+
+
+<div id="result">results </div>
+
+<script> 
+var correct=0;
+var wrong=0;
+function processPhrase()
+{
+    
+    ct=document.getElementById("p").value
+    rt=document.getElementById("t").value
+    out = document.getElementById("result")
+    if(ct==rct)
+    {
+        correct=correct+1
+        alert("Access Allowed")
+    }
+    else{
+        wrong=wrong+1
+        alert("Access Denied")
+    }
+    out.innerHTML="Correct count = "+correct+" Wrong count = "+wrong
+}
+
+</script>
+
+
+</body>
+</html> 
