@@ -43,7 +43,34 @@ function processPhrase()
 }
 
 </script>
-
+<br>
+<div class="container">
+    <img src="https://cdn.britannica.com/29/150929-050-547070A1/lion-Kenya-Masai-Mara-National-Reserve.jpg"  height="200" width="200" onclick="newImage()" id="image">
+<script>
+        var usingImage=1;
+          function newImage(){
+            
+              switch (usingImage) {
+                  case 1:
+                     document.getElementById("image").src="images/goat.jpg";
+                      usingImage=2;
+                      break;
+                  case 2:
+                  document.getElementById("image").src="images/narwhal.jpg";
+                      usingImage=3;
+                      break;
+                  case 3:
+                  document.getElementById("image").src="images/umbrellabird.jpg";
+                      usingImage=4;
+                      break;
+                  default :
+                  document.getElementById("image").src="https://cdn.britannica.com/29/150929-050-547070A1/lion-Kenya-Masai-Mara-National-Reserve.jpg"
+                  usingImage=1;
+                  break;
+              }
+            }
+</script>
+</div>
 
 </body>
 </html> 
