@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Checkbox JavaScript</title>
+    </head>
+<body>
+    <h1>Sowjanya orders a car</h1>
+    <form>
+        <input type ="checkbox" id="check_box1" name="check" value=electric>
+        <label for="check_box1">Electric</label> <br>
+    
+        <input type ="checkbox" id="check_box2" name="check" value="ac" > 
+        <label for="check_box2">AC</label><br>
+    
+        <input type ="checkbox" id="check_box3" name="check" value="gps"> 
+        <label for="check_box3">GPS</label><br>
+        
+    
+        <input type="button" onclick="orderCar()" value="Order a car">
+    </form> <br>
+    
+    <p id="result">This text will be replaced </p>
+    
+    <form>
+    <label for="property">Enter a property</label>
+    <input type="text" id="property" name="property_1" value="color"><br>
+    
+    <label for="properte">Enter a value</label>
+    <input type="text" id="properte" name="property_2"><br>
+    
+    <button onclick="updateCar()">Update the car</button>
+    </form>
+    
+
+    </body>
+    </html>
