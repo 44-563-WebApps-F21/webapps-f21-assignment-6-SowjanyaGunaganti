@@ -30,7 +30,41 @@
     
     <button onclick="updateCar()">Update the car</button>
     </form>
-    
+    <script> 
+        let my_car = {}
+        function orderCar(){
+            my_car = {}
+            var a = document.getElementById("check_box1").checked
+            var b = document.getElementById("check_box2").checked
+            var c = document.getElementById("check_box3").checked
+            if(a){
+                my_car.electric = document.getElementById("check_box1").checked
+                console.log(my_car)
+            }
+            else{
+                my_car.electric = false
+                console.log(my_car)
+            }
+            if(b){
+                my_car.ac = document.getElementById("check_box2").checked
+                console.log(my_car)
+            }
+            else{
+                my_car.ac = false
+                console.log(my_car)
+            }
+            if(c){
+                my_car.gps = document.getElementById("check_box3").checked
+                console.log(my_car)
+            }
+            else{
+                my_car.gps = false
+                console.log(my_car)
+            }
+            document.getElementById("result").innerHTML = "Electric : " + my_car.electric + ", "+ "AC : " + my_car.ac+ ", "+"GPS : " + my_car.gps;
+        }
+        </script>
+            
 
     </body>
     </html>
